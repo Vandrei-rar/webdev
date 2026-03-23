@@ -1,15 +1,9 @@
 const express = require("express")
 const router = express.Router()
+const mainController = require("./controllers/mainController")
 
-router.get("/", (req, res) => {
-    res.render('index')
-})
+router.get("/", mainController.main)
 
-router.get("/sobre/{:id}", (req, res) => {
-
-    const id = req.params.id
-    
-    res.render("sobre", { id })
-})
+router.get("/sobre/{:id}", mainController.sobre)
 
 module.exports = router
