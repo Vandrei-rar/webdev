@@ -8,3 +8,11 @@ exports.sobre = (req, res) => {
     
     res.render("sobre", { id })
 }
+
+exports.sobrePost = (req, res) => { 
+
+    const nome = req.body.nome
+    
+    res.render("profile", { nome })
+
+}

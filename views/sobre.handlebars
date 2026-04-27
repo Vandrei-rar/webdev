@@ -1,13 +1,6 @@
 <h1>PAGINA SOBRE</h1>
 
-<h3 style="color: blue;">
-    O ID DIGITADO É 
-    
-    {{#if id }}
-        <p style="color: red; font-size: 215px;">{{ id }}</p>
-    {{else}}
-        <p style="color: black; font-size: 215px;">NÃO TEM ID</p>
-    {{/if}}
-    
-    
-</h3>
+<form action="/sobre" method="POST">
+    <input type="text" name="nome" placeholder="Digite seu nome">
+    <button type="submit">Enviar</button>
+</form>

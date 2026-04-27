@@ -4,6 +4,7 @@ const mainController = require("./controllers/mainController")
 
 router.get("/", mainController.main)
 
-router.get("/sobre/{:id}", mainController.sobre)
+router.get("/sobre/", mainController.sobre)
+router.post("/sobre/", mainController.sobrePost)
 
 module.exports = router
